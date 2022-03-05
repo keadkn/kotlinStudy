@@ -1,1 +1,6 @@
-
+   val testMap1 = mutableMapOf<Int, String>()
+   testMap1.put(5, "jjanggu")
+   testMap1.put(10, "chulsu")
+   testMap1.put(15, "hunee")
+   testMap1.put(20, "yuuri")
+   println(testMap1[10])
