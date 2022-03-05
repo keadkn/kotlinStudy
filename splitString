@@ -1,0 +1,20 @@
+fun main() {
+    val testString = "when I was seven years old I was so small"
+    println(testString[0])
+    println(testString[1]
+    
+    fun(1)
+}
+fun string(a:Int){
+println(testString[a]
+
+}
+
+
+//sentence divide using split 
+fun main() {
+    val testString = "when I was seven years old I was so small"
+    val newString = testString.split(" ")
+    println(newString)
+    println(newString[0])
+}
