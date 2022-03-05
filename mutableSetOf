@@ -8,4 +8,7 @@ fun main() {
     mutSet.add("e")
     
     println(mutSet)
+    
+    mutSet.remove("e")
+    println(mutSet)
 }
