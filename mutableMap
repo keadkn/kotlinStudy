@@ -1,3 +1,35 @@
+fun main() {
+/*
+    val list1 = listOf("1","2","3","4")
+println(list1)
+println(list1[0])
+	val list2 = mutableListOf("a","b","c")
+    println(list2)
+    list2.add("d")
+    println(list2)
+    list2.remove("a")
+    println(list2)
+
+    
+   val intList1 = mutableListOf<Int>()
+   intList1.add(5)
+   intList1.add(10)
+   intList1.add(15)
+   intList1.add(20)
+   
+   val strList1 = mutableListOf<String>()
+   strList1.add("짱구")
+   strList1.add("철수")
+   strList1.add("훈이")
+   strList1.add("유리")
+   
+   val findIndex = intList1.indexOf(10)
+   println(findIndex)
+   println(intList1.indexOf(10))
+   println(strList1[findIndex])
+      
+
+*/
 fun main{
    val testMap1 = mutableMapOf<Int, String>()
    testMap1.put(5, "jjanggu")
@@ -6,3 +38,5 @@ fun main{
    testMap1.put(20, "yuuri")
    println(testMap1[10])
 }
+
+
