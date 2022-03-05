@@ -1,0 +1,87 @@
+//while statement loop
+
+fun main(){
+    var count = 0
+    while (count<100){
+        count++ //count = count+1
+        println(count)
+    }
+}
+
+// list statement
+fun main() {
+   val mutList1 = mutableListOf("a","b","c","d")
+   
+   println(mutList1)
+   for ( i in mutList1){
+       println(i)
+   }
+}
+
+//Map statement
+fun main() {
+   val testMap1 = mutableMapOf<Int, String>()
+   
+   testMap1.put(5, "jjangu")
+   testMap1.put(10, "chulsu")
+   testMap1.put(15, "yuuri")
+   testMap1.put(20, "huni")
+   println(testMap1)
+   
+   for( i in testMap1){
+       println(i)
+   }
+}
+
+//Map
+fun main(){
+	val testMap = mutableMapOf<Int, String>()
+	testMap[5] = "jjaugu"
+	testMap[10] = "chusu"
+	testMap[15] = "yuuri"
+	testMap[22] = "hunni"
+	println(testMap)
+
+	for ( i in testMap) {
+		println(i)
+	}
+}
+ 
+//mutableList next, hasNext, previous
+fun main() {
+   val mutList = mutableListOf("a","b","c","d")
+   val testIterator = mutList.listIterator()
+    
+   println(testIterator.next())
+   println(testIterator.next())
+   println(testIterator.next())
+   println(testIterator.hasNext())
+   println(testIterator.next())
+   println(testIterator.hasNext())
+   println(testIterator.previous())
+   
+}
+
+//finding score more than 50
+
+fun main() {
+    val studentScore = mutableMapOf<Int, String>()
+    studentScore[99] = "a"
+    studentScore[34] = "b"
+    studentScore[31] = "c"
+    studentScore[62] = "d"
+    studentScore[78] = "e"
+    studentScore[65] = "f"
+    studentScore[52] = "g"
+    studentScore[93] = "h"
+    
+    val testList = ArrayList<String>()
+    
+    for (i in studentScore){
+    	if (i.key >=50){ println(i.value)
+        testList.add(i.value)
+        }
+    	
+    }
+    println(testList)
+}
