@@ -1,0 +1,68 @@
+//how to make fun
+fun main() {
+	testFun()
+    testFun()
+}
+
+//making function 1
+fun testFun(){
+    println("a")
+    println("b")
+    println("c")
+    
+}
+
+//making function 2
+fun main() {
+    sum(1,3) //if you change the number you can sum these
+}
+fun sum(a: Int, b:Int){
+    println(a+b)
+}
+
+//making function 3
+fun main(){
+	println(sum(20,30))
+}
+
+fun sum(a: Int, b: Int) :Int {
+    val result = a+b
+    return result
+}
+
+//making function 4
+fun main() {
+   
+   riceCooker(1)
+}
+fun riceCooker(time :Int){
+    println("The rice will be done after $time minutes ")
+}
+
+//calculator
+
+fun main() {
+
+remainder(10,3)    
+}
+
+fun sumTwo(a:Int, b:Int){
+    println(a+b)
+}
+
+fun sumThree(a:Int, b:Int, c:Int){
+    println(a+b+c)
+}
+
+fun minus(a:Int, b:Int){
+	println(a-b)
+}
+
+fun division(a:Int, b:Int){
+    println(a/b)
+}
+
+fun remainder(a:Int, b:Int){
+    println(a % b)
+}
+
