@@ -1,0 +1,11 @@
+fun main() {
+    val mutSet = mutableSetOf("a","b","c")
+    println (mutSet)
+    
+    mutSet.add("d")
+    mutSet.add("e")
+    mutSet.add("e")
+    mutSet.add("e")
+    
+    println(mutSet)
+}
