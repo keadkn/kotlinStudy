@@ -18,3 +18,51 @@ fun main() {
     println(newString)
     println(newString[0])
 }
+
+//subString
+fun main(){
+	val testString = "when I was seven years old I was so small"
+
+    val splitString = testString.substring(0,2)
+    println(splitString)
+}
+
+//repalce
+fun main(){
+	val testString = "when I was seven years old I was so small"
+
+    val replaceVal = testString.replace("when", "while")
+    println(replaceVal)
+}
+
+
+//counting naver email
+fun main(){
+	val testList = ArrayList<String>()
+    
+    testList.add("aadsf@kakao.com")
+    testList.add("r1f1@naver.com")
+    testList.add("fsg@google.com")
+    testList.add("asdf@naver.com")
+    testList.add("sa@naver.com")
+    testList.add("ads@naver.com")
+    testList.add("asdq@naver.com")
+    testList.add("qwer@google.com")
+    
+    val emailList = ArrayList<String>()
+    
+   for(item in testList){
+   emailList.add(item.split("@")[1].split(".")[0])
+   }
+   println(emailList)
+   
+   var count = 0
+   
+   for(item in emailList){
+       if(item == "naver") {
+           count++
+       }
+   }
+   println(count)
+}
+
