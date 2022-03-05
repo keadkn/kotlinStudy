@@ -1,0 +1,61 @@
+//AND condition 1
+fun main() {
+    val a = "man"
+    val b = 
+    
+    if(a == "man" && b>=20){
+        println("And setisfaction")
+    } else{
+        println("AND unsatisfation")
+    }
+}
+
+//AND condition 2
+fun main() {
+    val a = "man"
+    val b = 
+    
+    if(a == "man" && b>=20){
+        println("And setisfaction")
+    } else{
+        println("AND unsatisfation")
+    }
+}
+
+//OR condition 1
+fun main() {
+    
+    val a = "man"
+    val b = 40
+    
+    if (a == "man" || b > 30) {
+        println("Satisfactory")
+    }
+    else{
+        println("Insatisfactory")
+    }
+}
+
+//AND condition 2
+fun main(){
+    val student = mutableMapOf<Int, String>()
+    student[90] = "a123"
+    student[53] = "b41"
+    student[33] = "c3"
+    student[34] = "d1"
+    student[23] = "e4"
+    student[55] = "f11"
+    student[63] = "g41"
+    student[34] = "h"
+    student[26] = "i"
+    student[62] = "j"
+    
+  
+    
+    for (i in student){
+        if (i.key > 50 && i.value.length > 2){
+            println(i)
+        }
+        
+    }
+}
