@@ -1,0 +1,33 @@
+//anyType example
+fun main() {
+
+	var anyType : Any = "String"
+    println(anyType)
+    anyType = 123
+    println(anyType)
+}
+
+//using IS
+fun main() {
+	var any1 :Any = "abc"
+	
+    if (any1 is String){ 
+    println("This is String")}
+    else {println("This is not String")}
+}
+
+//IS example using when
+fun main() {
+
+    var int1 :Any = 1234
+    when(int1) {
+        is Int -> {println("this is Int")}
+        is String ->{println("this is String")}
+    }
+}
+
+//AS example. 
+fun main() {
+	var str1 :String? = 1 as? String
+	println(str1)
+}
