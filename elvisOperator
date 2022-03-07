@@ -1,0 +1,66 @@
+fun main() {
+    
+    val testStr1 : String = ""
+    println(testStr1)
+    val testStr2 = null
+    println(testStr2)
+    val testStr3 : String = "abcd"
+    println(testStr3)
+    val testStr4 : String? = null
+    println(testStr4)
+    //If you want to put null in to value, you have to put '?' after type
+}
+
+//string return to int
+ fun main() {
+println(findStringLength("abcdefg"))
+
+}
+fun findStringLength(str: String): Int{
+    
+    return str.length
+}	
+
+//if you want to use null you need to put '?' after type
+fun main() {
+println(findStringLength2(null))
+
+}
+fun findStringLength2(str: String?): Int? {
+    return str?.length
+}
+
+//you can write this way
+fun main() {
+println(findStringLength3(null))
+
+}
+fun findStringLength3(str: String?) : Int {
+    var resultCount = 0
+    if(str != null) { 
+    	resultCount = str.length
+    }
+    return resultCount
+}
+
+//you can use elvis operator
+fun main() {
+println(findStringLength4(null))
+
+}
+
+fun findStringLength4(str : String?) :Int {
+    
+    return str?.length ?: 0
+}
+
+//elvis operator 2
+fun main() {
+println(findStringLength4(null))
+
+}
+
+fun findStringLength4(str : String?) :String {
+    
+    return str?.length.toString() ?: "Result is null"
+}
