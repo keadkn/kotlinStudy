@@ -1,0 +1,46 @@
+// .distinct .maxOrNull .minOrNull .average
+fun main() {
+    val testList1 = mutableListOf<Int>()
+    testList1.add(1)
+    testList1.add(2)
+    testList1.add(2)
+    testList1.add(2)
+    testList1.add(10)
+    println(testList1)
+    println(testList1.distinct()) // print distinct
+    println(testList1.maxOrNull()) //print number max
+    println(testList1.minOrNull()) // print number minimum
+    println(testList1.average()) // print number average
+} 
+
+//start with
+fun main() {
+	val testList2 = listOf("jimin", "jay", "atom" ,"john", "toy", "tommy", "atroy")
+ 	val result2 = testList2.filter{
+    	it.startsWith("j") 
+ 	}
+ 
+ println(testList2)
+ println(result2)
+ 
+}
+
+// .filter
+fun main() {
+    val testList = listOf(1,2,3,4,5,6)
+    
+    val result2 = testList.filter{
+        it % 2 == 0 // remainder is 0
+    }
+    println(result2)
+}
+// groupBy List
+fun main() {
+    val testList1 = listOf("a","aa","aaa","aaaa","aaaaa")
+    
+    val result3 = testList1.groupBy {
+        it.length > 3
+    }
+    println(result3)
+    println(result3[true])
+}
